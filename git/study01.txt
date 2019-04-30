@@ -18,7 +18,17 @@ git 学习
 	2、
 
 指令说明 
-1、git init：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹    .git。
-2、
+1、git init：
+			功能说明：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹    .git。
+			语法：[  git init  ]
+			
+2、git status：
+			功能说明：确认当前仓库状态。
+			语法：[  git status  ]
+			
+3、git diff：
+			功能说明：比较 workspace 与 repository 之间的差异。
+			语法：[  git diff <file>  ]。
+
 
 
