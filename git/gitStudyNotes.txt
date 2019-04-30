@@ -27,7 +27,16 @@ git 学习笔记
 	3、版本回退:
 	
 		git reset[见指令说明]
-
+		
+	思考：
+	1、
+		第一次修改 -> git add -> 第二次修改 -> git commit
+		结果：repository 中存放 第一次修改，workspace 为 第二次修改
+	2、
+		第一次修改 -> git add -> 第二次修改 -> git add -> git commit
+		结果：repository 中存放 第二次修改，workspace 为 第二次修改
+		
+		
 指令说明 
 1、git init：
 			功能说明：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹 .git。
@@ -39,7 +48,9 @@ git 学习笔记
 			
 3、git diff：
 			功能说明：比较 workspace 与 repository 之间的差异。
-			语法：[  git diff <file>  ];
+			语法：
+				正常:[  git diff <file>  ];
+				可以查看工作区和版本库里面最新版本的区别:[  git diff HEAD -- <file>  ];
 
 4、git log：
 			功能说明：显示从最近到最远的提交日志。
@@ -47,7 +58,11 @@ git 学习笔记
 				多行显示:[  git log  ] ;
 				单行显示:[  git log --pretty=oneline  ];
 
-5、git reset：
+5、git reflog：
+			功能说明：显示命令日志。
+			语法：[  git reflog  ];
+
+6、git reset：
 			功能说明：返回版本号
 			语法：
 				返回上一版本：[  git reset --hard HEAD^  ];
@@ -70,7 +85,7 @@ git 学习笔记
 					|-----> 版本：版本2
 							版本：版本1				
 				
-6、
+
 				
 				
 
