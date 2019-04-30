@@ -13,7 +13,7 @@ git 学习
 	
 	1、正常提交流程：
 	
-	workspace[工作区] ---（code:git add <file>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
+	workspace[工作区] ---（code:git add <file/文件夹>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
 	
 	2、
 
