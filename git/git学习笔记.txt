@@ -1,0 +1,41 @@
+
+git 学习笔记
+
+基本说明
+
+	1、安装git
+	2、指定文件夹，右键选择[git bash here]
+	
+各区域说明
+	区域分类：
+		1、workspace:工作区
+		2、stage：暂存区
+		3、repository:版本仓库
+
+	作业流程：
+	
+	1、创建版本库:
+	
+	git init[见指令说明]
+	
+	2、正常提交流程：
+	
+	workspace[工作区] ---（code:git add <file/文件夹>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
+	
+	3、版本回退:
+
+指令说明 
+1、git init：
+			功能说明：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹 .git。
+			语法：[  git init  ]
+			
+2、git status：
+			功能说明：确认当前仓库状态。
+			语法：[  git status  ]
+			
+3、git diff：
+			功能说明：比较 workspace 与 repository 之间的差异。
+			语法：[  git diff <file>  ]。
+
+
+
