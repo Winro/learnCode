@@ -11,7 +11,14 @@ git 学习
 
 	作业流程：
 	
+	1、正常提交流程：
+	
+	workspace[工作区] ---（code:git add <file>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
+	
+	2、
 
 指令说明 
-1、git init：指定 位置
+1、git init：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹    .git。
+2、
+
 
