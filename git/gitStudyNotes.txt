@@ -6,36 +6,71 @@ git 学习笔记
 	1、安装git
 	2、指定文件夹，右键选择[git bash here]
 	
+	
 各区域说明
-	区域分类：
+	key words explain：
 		1、workspace:工作区
 		2、stage：暂存区
 		3、repository:版本仓库
+		4、HEAD：表示当前版本，最新提交至 repository 版本号  commit id（例：b1027632058e3a02f4e8f6979dc5fe2898647229）
 
 	作业流程：
 	
 	1、创建版本库:
 	
-	git init[见指令说明]
+		git init[见指令说明]
 	
 	2、正常提交流程：
 	
-	workspace[工作区] ---（code:git add <file/文件夹>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
+		workspace[工作区] ---（code:git add <file/文件夹>）--->  stage[暂存区]  ---(code:git commit -m "some message")--->  repository[版本仓库]
 	
 	3、版本回退:
+	
+		git reset[见指令说明]
 
 指令说明 
 1、git init：
 			功能说明：指定 位置创建repository[版本仓库]，当前文件夹下边出现文件夹 .git。
-			语法：[  git init  ]
+			语法：[  git init  ];
 			
 2、git status：
 			功能说明：确认当前仓库状态。
-			语法：[  git status  ]
+			语法：[  git status  ];
 			
 3、git diff：
 			功能说明：比较 workspace 与 repository 之间的差异。
-			语法：[  git diff <file>  ]。
+			语法：[  git diff <file>  ];
 
+4、git log：
+			功能说明：显示从最近到最远的提交日志。
+			语法：
+				多行显示:[  git log  ] ;
+				单行显示:[  git log --pretty=oneline  ];
 
+5、git reset：
+			功能说明：返回版本号
+			语法：
+				返回上一版本：[  git reset --hard HEAD^  ];
+				返回指定版本：[  git reset --hard <commit id>],例([  git reset --hard b1027  ]);
+				
+			详细说明：
+					HEAD:为指针。
+					
+					HEAD
+					|
+					|-----> 版本：版本3
+							版本：版本2
+							版本：版本1
+				
+				命令:[  git reset --hard HEAD^  ]
+				
+					HEAD
+					|
+					|       版本：版本3
+					|-----> 版本：版本2
+							版本：版本1				
+				
+6、
+				
+				
 
