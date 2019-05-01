@@ -30,7 +30,10 @@ git 学习笔记
 	
 	4、撤销修改：
 		
-		git checkout[见指令说明]
+		git checkout[见指令说明]，配套使用git reset HEAD [见指令说明]
+		
+	5、删除文件：
+		
 		
 		
 	思考：
@@ -91,14 +94,33 @@ git 学习笔记
 							版本：版本1
 
 7、git checkout:
-				功能说明：撤销修改，stage 中丢弃工作区的修改；
+				功能说明：
+						1、撤销修改，stage 中丢弃工作区的修改；
+						2、撤销删除
 				语法：[  git checkout -- <file>  ]
 				
 				使用说明：
-						1、文件修改 [  未提交 git add 状态  ]，
+						文件修改 
+						1、[  未提交 git add 状态  ]：
 							使用 [  git status  ],显示当前修改文件未提交至stage
-							使用 [  git checkout  ] ,
-							使用 [  git status  ],显示当前分支内已无需提交至stage文件，也就是说，原文件被返回至
+							使用 [  git checkout  ] ,可以退回至保存前
+							使用 [  git status  ],显示当前分支内已无需提交至stage文件，也就是说，原文件被返回至保存前
+							
+						2、[  已提交 git add 状态  ]：
+							使用 [  git status  ],显示当前修改文件已提交至stage
+							使用 [  git checkout  ] ,无法退回至git add前
+							使用 [  git status  ],显示当前分支内当前修改文件已提交至stage
+							
+							需要使用[  git reset HEAD <file>  ] 修改撤销掉（unstage），重新放回工作区
+							
+						场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+						场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
+
+						场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+							
+							
+						
 				
 
 				
