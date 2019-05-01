@@ -94,6 +94,12 @@ git 学习笔记
 				功能说明：撤销修改，stage 中丢弃工作区的修改；
 				语法：[  git checkout -- <file>  ]
 				
+				使用说明：
+						1、文件修改 [  未提交 git add 状态  ]，
+							使用 [  git status  ],显示当前修改文件未提交至stage
+							使用 [  git checkout  ] ,
+							使用 [  git status  ],显示当前分支内已无需提交至stage文件，也就是说，原文件被返回至
+				
 
 				
 				
