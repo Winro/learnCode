@@ -65,6 +65,7 @@ git 学习笔记
 			语法：
 				多行显示:[  git log  ] ;
 				单行显示:[  git log --pretty=oneline  ];
+				查看分支合并图：[  git log --graph  ];
 
 5、git reflog：
 			功能说明：显示命令日志。
@@ -103,11 +104,11 @@ git 学习笔记
 			2、功能说明：
 					1、选择分支
 						
-					语法：[  git checkout 分支名称  ]
+					语法：[  git checkout <branch name>  ]
 					
 					2、创建并选择分支
 						
-					语法：[  git checkout -b 分支名称  ]
+					语法：[  git checkout -b <branch name>  ]
 						
 						
 				
@@ -147,7 +148,7 @@ git 学习笔记
 			功能说明：
 				1、创建分支
 				
-				语法：[  git branch  分支名称  ]
+				语法：[  git branch  <branch name>  ]
 				
 				2、查看现有分支，以及目前指向分支
 				
@@ -155,11 +156,11 @@ git 学习笔记
 				
 				3、删除分支
 				
-				语法：[  git branch -d 分支名称  ]
+				语法：[  git branch -d <branch name>  ]
 12、git merge:
 			功能说明：
 				将当前指向的分支  与  指向目标分支  进行合并
-			语法：[  git merge 分支名称  ]
+			语法：[  git merge <branch name>  ]
 			
 				
 				
