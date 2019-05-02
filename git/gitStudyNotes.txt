@@ -164,7 +164,7 @@ git 学习笔记
 			
 			快速模式：[  git merge <branch name>  ]
 					说明：删除分支后无历史
-			正常模式：[  git merge --no-ff <branch name>  ]
+			正常模式：[  git merge --no-ff -m "message" <branch name>  ]
 					说明：删除分支后有历史
 				
 				
