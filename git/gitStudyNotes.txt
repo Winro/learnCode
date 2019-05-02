@@ -94,12 +94,24 @@ git 学习笔记
 							版本：版本1
 
 7、git checkout:
-				功能说明：
+				1、功能说明：
 						1、撤销修改，stage 中丢弃工作区的修改；
 						2、撤销删除
-				语法：[  git checkout -- <file>  ]
+						
+						语法：[  git checkout -- <file>  ]
 				
-				使用说明：
+				2、功能说明：
+						1、选择分支
+						
+						语法：[  git checkout 分支名称  ]
+						
+						2、创建并选择分支
+						
+						语法：[  git checkout -b 分支名称  ]
+						
+						
+				
+				撤销类使用说明：
 						文件修改 
 						1、[  未提交 git add 状态  ]：
 							使用 [  git status  ],显示当前修改文件未提交至stage
@@ -130,6 +142,14 @@ git 学习笔记
 10、git clone:
 				功能说明：从远程仓库下拉至本地
 				语法：[  git clone git@github.com:Winro/learnCode.git  ]
+				
+11、git branch:
+				功能说明：
+					1、创建分支
+					
+					2、查看分支
+					
+				
 				
 				
 
