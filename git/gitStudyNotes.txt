@@ -160,8 +160,12 @@ git 学习笔记
 12、git merge:
 			功能说明：
 				将当前指向的分支  与  指向目标分支  进行合并
-			语法：[  git merge <branch name>  ]
+			语法：
 			
+			快速模式：[  git merge <branch name>  ]
+					说明：删除分支后无历史
+			正常模式：[  git merge --no-ff <branch name>  ]
+					说明：删除分支后有历史
 				
 				
 				
