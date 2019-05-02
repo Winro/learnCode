@@ -94,20 +94,20 @@ git 学习笔记
 							版本：版本1
 
 7、git checkout:
-				1、功能说明：
-						1、撤销修改，stage 中丢弃工作区的修改；
-						2、撤销删除
-						
-						语法：[  git checkout -- <file>  ]
+			1、功能说明：
+					1、撤销修改，stage 中丢弃工作区的修改；
+					2、撤销删除
+					
+					语法：[  git checkout -- <file>  ]
 				
-				2、功能说明：
-						1、选择分支
+			2、功能说明：
+					1、选择分支
 						
-						语法：[  git checkout 分支名称  ]
+					语法：[  git checkout 分支名称  ]
+					
+					2、创建并选择分支
 						
-						2、创建并选择分支
-						
-						语法：[  git checkout -b 分支名称  ]
+					语法：[  git checkout -b 分支名称  ]
 						
 						
 				
@@ -132,23 +132,35 @@ git 学习笔记
 						场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
 							
 8、git remote：
-				功能说明：连接远程仓库
-				语法：[ git remote add origin git@github.com:Winro/learnCode.git ]
+			功能说明：连接远程仓库
+			语法：[ git remote add origin git@github.com:Winro/learnCode.git ]
 
 9、git push：
-				功能说明：推送至远程仓库
-				语法：[  git push -u origin master  ]
+			功能说明：推送至远程仓库
+			语法：[  git push -u origin master  ]
 
 10、git clone:
-				功能说明：从远程仓库下拉至本地
-				语法：[  git clone git@github.com:Winro/learnCode.git  ]
+			功能说明：从远程仓库下拉至本地
+			语法：[  git clone git@github.com:Winro/learnCode.git  ]
 				
 11、git branch:
-				功能说明：
-					1、创建分支
-					
-					2、查看分支
-					
+			功能说明：
+				1、创建分支
+				
+				语法：[  git branch  分支名称  ]
+				
+				2、查看现有分支，以及目前指向分支
+				
+				语法：[  git branch  ]
+				
+				3、删除分支
+				
+				语法：[  git branch -d 分支名称  ]
+12、git merge:
+			功能说明：
+				将当前指向的分支  与  指向目标分支  进行合并
+			语法：[  git merge 分支名称  ]
+			
 				
 				
 				
