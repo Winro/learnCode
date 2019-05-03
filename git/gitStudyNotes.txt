@@ -44,6 +44,20 @@ git 学习笔记
 		第一次修改 -> git add -> 第二次修改 -> git add -> git commit
 		结果：repository 中存放 第二次修改，workspace 为 第二次修改
 		
+	多人协作的工作模式通常是这样：
+
+			首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+			如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+			如果合并有冲突，则解决冲突，并在本地提交；
+
+			没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+
+			如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
+
+			这就是多人协作的工作模式，一旦熟悉了，就非常简单。		
+		
 	
 指令说明 
 1、git init：
@@ -138,7 +152,7 @@ git 学习笔记
 
 9、git push：
 			功能说明：推送至远程仓库
-			语法：[  git push -u origin master  ]
+			语法：[  git push -u origin <branch-name>  ]
 
 10、git clone:
 			功能说明：从远程仓库下拉至本地
@@ -157,6 +171,10 @@ git 学习笔记
 				3、删除分支
 				
 				语法：[  git branch -d <branch name>  ]
+				
+				4、强行删除分支：删除未合并的分支
+				
+				语法：[  git branch -D <branch name>  ]
 12、git merge:
 			功能说明：
 				将当前指向的分支  与  指向目标分支  进行合并
@@ -166,6 +184,9 @@ git 学习笔记
 					说明：删除分支后无历史
 			正常模式：[  git merge --no-ff -m "message" <branch name>  ]
 					说明：删除分支后有历史
+		
+13、git remote -v:
+			功能说明：查看远程仓库信息
 				
 				
 				
